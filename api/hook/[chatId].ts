@@ -13,7 +13,7 @@ type DDNSRequest = {
 }
 
 function buildOneIPResult(type: string, data: IP) {
-    return `公网 IP：\n${type}: ${data.result}\nIP: \`${data.addr}\`\n域名: ${data.domains}\n`
+    return `==公网 IP 更新==\n\n${type}: ${data.result}\nIP: [${data.addr}]\n域名: ${data.domains}\n`
 }
 
 export default async (req: VercelRequest, res: VercelResponse) => {
